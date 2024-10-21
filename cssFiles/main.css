@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif !important;
+}
+
+body p {
+    font-size: large;
+}
+
+.swapButton .btn i {
+    font-family: 'Font Awesome 5 Free', sans-serif !important;
+    /* İkon font-family */
+}
+
+body h2 {
+    margin-top: 3rem !important;
+    text-shadow: 4px 4px 5px rgba(71, 5, 224, 0.3);
+}
+
+#Layer_1 {
+    fill: transparent;
+    stroke: rgb(0, 0, 0);
+    stroke-width: 1px;
+    stroke-dasharray: 1800;
+    animation: te 6s ease-in-out infinite, color-change 6s ease-in-out infinite, width-change 6s ease-in-out infinite;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
+
+@keyframes te {
+    from {
+        stroke-dashoffset: 1800;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        stroke: rgb(0, 0, 0);
+    }
+
+    50% {
+        stroke: rgb(0, 0, 0);
+    }
+
+    100% {
+        stroke: rgb(255, 255, 255);
+    }
+}
+
+@keyframes width-change {
+
+    0%,
+    100% {
+        stroke-width: 1px;
+    }
+
+    50% {
+        stroke-width: 2px;
+    }
+}
+
+
+
+.tradingview-widget-container__widget {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tradingviewArea {
+    margin: 20px 0px;
+}
+
+.widgetDescription {
+    padding: 10px 10% 0px 10%;
+    padding-bottom: 0 !important;
+}
+
+#currencyAppArea {
+    height: auto;
+}
+
+#weatherForecastArea {
+    height: auto;
+}
+
+#weatherForecastArea .container {
+    width: 80% !important;
+    max-width: none !important;
+    margin: 0 auto;
+}
+
+#weatherForecastDailyArea .container {
+    width: 80% !important;
+    max-width: none !important;
+    margin: 0 auto;
+}
+
+
+/* NAVBAR */
+
+
+
+#headertop {
+    border-bottom: 1px solid #000000;
+}
+
+#headertop .navbar-logo img {
+    height: 150px;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    #headertop .navbar-logo img {
+        height: 100px;
+    }
+}
+
+
+.navbar-nav li a {
+    text-decoration: none !important;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+#widgetnexusheader {
+    background: transparent;
+}
+
+.nav-link:hover {
+    background-color: rgba(63, 6, 197, 0.1);
+    border-radius: 4px;
+}
+
+
+#footer .col {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.footerLogo img {
+    height: 150px;
+}
+
+#footer {
+    margin-top: 80px;
+    background: rgb(122, 117, 143);
+}
+
+#footer p {
+    color: #ffffff;
+}
